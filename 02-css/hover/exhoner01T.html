@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;box-sizing: border-box;}
+        div{
+            width: 1000px;
+            margin: 100px auto;
+            background-color: tomato;
+            height: 50px;
+        }
+        li {
+            list-style: none;
+        }
+        div > ul > li {
+            float: left;
+            width: 25%;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+        }
+        div > ul > li li {
+            line-height: 30px;
+            color: #333;
+        }
+        li ul {
+            display: none;
+        }
+        /* div 자속요소 ul요소의 자식요소 li요소에 마우스를 올렸을때 
+        마우스를 올린 요소의 안에있는 ul 요소 display 속성 변경 */
+        div > ul > li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+        <li>menu1
+            <ul>
+                <li>소메뉴1</li>
+                <li>소메뉴2</li>
+                <li>소메뉴3</li>
+                <li>소메뉴4</li>
+            </ul>
+        </li>
+        <li>menu2
+            <ul>
+                <li>소메뉴1</li>
+                <li>소메뉴2</li>
+                <li>소메뉴3</li>
+                <li>소메뉴4</li>
+            </ul>
+        </li>
+        <li>menu3
+            <ul>
+                <li>소메뉴1</li>
+                <li>소메뉴2</li>
+                <li>소메뉴3</li>
+                <li>소메뉴4</li>
+            </ul>
+        </li>
+        <li>menu4
+            <ul>
+                <li>소메뉴1</li>
+                <li>소메뉴2</li>
+                <li>소메뉴3</li>
+                <li>소메뉴4</li>
+            </ul>
+        </li>
+    </ul></div>
+</body>
+</html>

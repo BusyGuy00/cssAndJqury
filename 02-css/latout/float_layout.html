@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        a{ text-decoration: none; color: inherit;}
+        li { list-style: none;}
+        body {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+        #wrap {
+            width:  100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* 헤더의 높이가 고정 값으로 시작 되어 clear을 주지 않아도 된다. */
+        #header{
+            height: 120px;
+            padding: 30px 0;
+     }
+     #header h1{
+        float: left;
+     }
+     #header ul{
+        float: right;
+     }
+     #header ul li{
+        float: left;
+        padding: 0 30px;
+     }
+     h2{
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #333;
+     }
+     .clearboth::after{
+        content: "";
+        display: block;
+        clear: both;
+     }
+     #contents1 li {
+        border: 1px solid #ccc;
+        width: 30%;
+        float:left;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 30px;
+        
+     }
+     #contents1 li:not(:last-child){
+        margin-right: 5%;
+     }
+
+     #contents2 li{
+        line-height: 40px;
+        border-bottom: 1px solid #ccc;
+     }
+     #footer{
+        padding: 20px 0;
+     }
+     #footer address {
+        float: left;
+        font-style: normal;
+     }
+     #footer h1{
+        float: right;
+        
+     }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>
+                Green
+            </h1>
+            <ul>
+                <li a href="#">menu1</li>
+                <li a href="#">menu2</li>
+                <li a href="#">menu3</li>
+                <li a href="#">menu4</li>
+            </ul>
+        </div>
+        <div id="contents">
+            <div id="contents1">
+                <h2>메인 컨텐츠01</h2>
+                <ul class="clearboth">
+                    <li>
+                        <h3>작은 제목 입니다.</h3>
+                        <p>글적는 부분 입니다.</p>
+                        <span>2023.04.06</span>
+                    </li>
+                    <li>
+                        <h3>작은 제목 입니다.</h3>
+                        <p>글적는 부분 입니다.</p>
+                        <span>2023.04.06</span>
+                    </li>
+                    <li>
+                        <h3>작은 제목 입니다.</h3>
+                        <p>글적는 부분 입니다.</p>
+                        <span>2023.04.06</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="contents2">
+                <h2>공지사항</h2>
+                <ul>
+                    <li>그린 컴퓨터 아카데미 소식</li>
+                    <li>그린 컴퓨터 아카데미 소식</li>
+                    <li>그린 컴퓨터 아카데미 소식</li>
+                    <li>그린 컴퓨터 아카데미 소식</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer" class="clearboth">
+            <address>
+                주소 : 울산시 남구 삼산동 km빌딩 그린 대표이사: 그린
+            </address>
+            <h1>
+                Green
+            </h1>
+        </div>
+
+    </div>
+</body>
+</html>

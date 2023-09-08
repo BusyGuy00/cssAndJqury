@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0; box-sizing: border-box;}
+        body > div{
+            width: 100%;
+            /* 브라우저 기준 100%를 vh라 한다 */
+            height: 100vh;
+            background-color: aqua;
+        }
+        h1 {
+            float: left;
+        }
+        #menu {
+            float: right;
+        }
+        #menu li {
+            float: left;
+            padding: 20px;
+            list-style: none;
+        }
+        .mo{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            right: 0;
+            top: 0;
+            padding-top: 10px;
+            display: none;
+        }
+        .mo span {
+            display: block;
+            width: 60%;
+            height: 5px;
+            background-color: black;
+            margin: 6px auto;
+        }
+        @media screen and (max-width: 1024px){
+            body> div {
+                background-color: bisque;
+             }
+        }
+        @media screen and (max-width: 768px){
+            body > div {
+                background-color: blue;
+            }
+            #menu ul {
+                display: none;
+            }
+            .mo {display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>green</h1>
+        <div id="menu">
+         <ul>
+         <li>menu1</li>
+         <li>menu2</li>
+         <li>menu3</li>
+         <li>menu4</li>
+        </ul>
+         </div>
+        <div class="mo">
+          <span></span><span></span><span></span>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

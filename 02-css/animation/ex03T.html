@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body { width: 100%; height: 100vh;}
+        #box{
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #box *{
+            position: absolute;
+        }
+        #box div {
+            background-color: black;
+        }
+        #left {
+            width: 10px;
+            height: 0;
+            top:0;
+            left: 0;
+            animation-name: heightscale;
+            animation-duration: 0.5s;
+            animation-fill-mode:forwards;
+        }
+        #right {
+            width: 10px;
+            height: 0;
+            bottom:0;
+            right: 0;
+            animation-name: heightscale;
+            animation-duration: 0.5s;
+            animation-fill-mode:forwards;
+        }
+        #top {
+            width: 0;
+            height: 10px;
+            top:0;
+            right: 0;
+            animation-name: widthscale;
+            animation-duration: 0.5s;
+            animation-fill-mode:forwards;
+        }
+        
+        #bottom {
+            width: 0;
+            height: 10px;
+            bottom:0;
+            left: 0;
+            animation-name: widthscale;
+            animation-duration: 0.5s;
+            animation-fill-mode:forwards;
+        }
+        
+        #center {
+            width: 8px;
+            height: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(1,0.5);
+            animation-name: heightscale;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode:forwards;
+           
+        }
+        p {
+            left:50%;
+            bottom: 20px;
+            transform: translate(-50%);
+            opacity: 0;
+            animation-name:p;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode:forwards;
+        }
+        h2 {
+            left:50%;
+            top: 20px;
+            transform: translate(-50%);
+            opacity: 0;
+            animation-name:p;
+            animation-duration: 0.5s;
+            animation-delay: 1s;
+            animation-fill-mode:forwards;
+
+            /* animation: fadein 0.5s 1s forwards; */
+
+        }
+        @keyframes widthscale {
+            0%{ width: 0;}
+            100%{width: 100%;}
+        }
+        @keyframes heightscale {
+            0%{ height: 0%;}
+            100%{height: 100%;}
+        }
+        
+        @keyframes p {
+            0%{ opacity: 0;}
+            100%{opacity: 1;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id=box>
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id=top></div>
+        <div id="bottom"></div>
+        <div id="center"></div>
+        <h2>Green Academy</h2>
+        <p>green Academy</p>
+    </div>
+</body>
+</html>

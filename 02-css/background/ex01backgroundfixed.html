@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         div {
+            width: 100%;
+            /* vh는 브라우저의 높이와 같이라는 뜻이다. */
+            height: 100vh;
+         }
+         div:nth-child(1) {
+            background-color: aliceblue;
+
+         }
+         div:nth-child(2) {
+            background-color: lawngreen;
+            background-image: url("../imges/cat.jpg");
+            /* 화면에서 밑에서 위로 올라오는 느낌 fixed 
+            fixed 화면에 고정 되어 있다*/
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+         div:nth-child(3) {
+            background-color: lightblue;
+         }
+         
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

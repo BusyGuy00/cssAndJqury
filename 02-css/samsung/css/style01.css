@@ -1,0 +1,398 @@
+.inner_wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+#header {
+    border-bottom: 1px solid #ddd;
+    
+}
+#header .inner_wrap {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.logo_area {
+    display: flex;
+    align-items: center;
+}
+.logo_area ul {
+    display: flex;
+    align-items: center;
+}
+.logo_area h1 {
+    width: 300px;
+    font-size: 0;
+    background: url(../images/logo.png) center center no-repeat ;
+    height: 80px;
+}
+.logo_area li {
+    border:  1px solid #ddd;
+    padding: 10px;
+}
+.logo_area li:nth-child(2){
+    background-color: #ddd;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav ul {
+    display: flex;
+    padding: 0 20px;
+}
+.nav div {
+    height: 30px;
+    position: relative;
+    width: 120px;
+    text-align: center;
+    line-height: 30px;
+}
+.nav div ul {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100px;
+    padding: 0;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+.nav div ul li:nth-child(2){
+    display: none;
+}
+.nav div ul:hover {
+    border: 1px solid #0000ff;
+}
+.nav div ul:hover li {
+    color : #0000ff
+}
+.nav div ul li:hover{
+    background-color: #0000ff;
+    color: #fff;
+}
+.nav div ul:hover li:nth-child(2){
+    display: block;
+}
+.nav > ul li {
+    padding: 0 20px;
+}
+.nav button {
+    background-color: transparent;
+    padding: 6px;
+    border: 1px solid #ccc;
+    margin-left: 6px;
+}
+#visual {
+    display: flex;
+}
+/* 메인 상단 */
+#itemlist{ 
+    width: 40%;
+    padding-right: 50px;
+}
+
+#mainbanner{
+    width: 60%;
+}
+#main_content > div {
+    padding: 60px 0;
+}
+#login {
+    background-color: #eaf4fe;
+    border-radius: 16px;
+    margin-bottom: 20px ;
+    padding: 16px;
+
+}
+#login > a {
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 16px;
+    background-color: #007aff;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+.btn_group {
+    border-radius: 16px;
+    border: 1px solid #007aff;
+    background-color: #fff;
+    display: flex;
+    line-height: 50px;
+}
+.btn_group li {
+    width:  50%;
+    text-align: center;
+    color: #007aff;
+}
+.btn_group li:first-child {
+    border-right: 1px solid #007aff;
+}
+#iconul{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* wrap으로 줄 바꿈 허용 후에 li에 간격 비율을 주면 맞춰서 이동 */
+#iconul li {
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+#iconul li img {
+    width: 70%;
+}
+#iconul span {
+    display: block;
+}
+#mainbanner {
+    text-align: center;
+}
+#mainbanner img {
+    width: 100%;
+}
+#mainbanner h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* 보험 상품 부분 */
+#main_content #insurance_story {
+    background-color: #dfe6f9;
+    position: relative;
+    padding-bottom: 120PX;
+    margin-bottom: 100px;
+}
+.main_tit {
+    text-align: center;
+    font-size: 34;
+    padding-bottom: 30px;
+}
+.main_tit span {
+    font-size: 42px;
+    font-weight: bold;
+}
+.text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 200px;
+}
+.text-box li {
+    width: 22%;
+    border-radius: 40px 40px 0 40px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    padding: 40px;
+    font-size: 18px;
+}
+/* even은 짝수 지정 */
+.text-box li:nth-child(even) {
+    align-self: flex-end;
+}
+
+.link_div {
+    width: 1200px;
+    height: 120px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%, 0);
+}
+.link_div ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+.link_div ul li {
+    width: 18%;
+    text-align: center;
+}
+/* 가운데 배치 할떄 텍스트와 따로 그림만 할떄는 마진을 주면 된다 */
+.link_div li span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    text-align: center;
+    line-height: 60px;
+    color:#fff;
+    margin: 0 auto;
+}
+#life{
+    display: block;
+}
+#life h2 {
+    font-size: 28px;
+}
+#life h2 span {
+    font-size: 32px;
+}
+#life ul { 
+    display: flex;
+    justify-content: space-between;
+}
+#life li {
+    width: 22%;
+    height: 280px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+#life li p {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+#life li img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+#main_banner {
+    background-color: #f2f8ff;
+}
+#main_banner div {
+    padding: 20px
+}
+#main_banner h3 {
+    font-weight: 550;
+    font-size: 23px;
+}
+#main_banner p {
+    padding-top: 20px;
+    font-size: 13px;
+}
+#main_banner ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_banner ul li {
+    width: 50%;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+#main_banner li span { 
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}#main_banner li img {
+   width: 90%;
+   text-align: center;
+}
+ #main_community { 
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_community >div {
+    width: 46%;
+}
+#main_community >div:nth-child(1) li {
+    background-color: #eee;
+    padding: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+#main_community >div strong{
+    color:#007aff;
+    padding-right: 5px;
+}
+#main_community .main_tit {
+    text-align: left;
+}
+.event div {
+    background: url(../images/banner01.png) right center no-repeat rgb(224,227,241);
+    background-size: auto 100%;
+    height: 180px;
+    border-radius: 80px;
+    padding: 45px;
+}
+.event div h3 {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.event div p {
+    font-size: 15px;
+}
+.notice {
+    padding-top: 30px;
+}
+.notice li {
+    line-height: 30px;
+}
+.notice li span{
+    padding-right: 10px;
+}
+#recommand h2 {
+    text-align: left;
+}
+#recommand ul {
+    display: flex;
+    justify-content: space-between;
+}
+#recommand ul li {
+    padding: 30px;
+    text-align: left;
+    background-color: #508ed9;
+    border-radius: 30px;
+    margin: 10px;
+    color: #fff;
+    font-size: 10px;
+}
+#recommand ul li strong{
+    padding-top: 30px; 
+    display: block;
+    font-size: 25px;
+}
+#footer_menu {
+    background-color: #eee;
+}
+#footer_menu ul {
+    display: flex;
+    border-left: 1px solid #ccc;
+}
+#footer_menu ul li {
+    width: 20%;
+    line-height: 60px;
+    border-right: 1px solid #ccc;
+    padding-left: 20px;
+}
+#footer_copy {
+    text-align: center;
+    padding: 40px 0;
+}
+#footer_copy > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer_copy > div ul {
+    display: flex;
+}
+#footer_copy > div ul li {
+    padding: 0 20px;
+}
+address {
+    padding-top: 20px;
+}

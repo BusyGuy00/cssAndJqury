@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <table border="1" cellspacing="0" cellpading="10">
+        <caption>블랙앤퍼니는 고객님의 소중한 개인정보를 보호하기 위해, 주민등록번호를 수집하지 않습니다.</caption>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="username" value=""></td>
+            </tr>
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="userid" value=""></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="text" name="userpassword" value=""></td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td><input type="text" name="userpasscheck" value=""></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="text" name="useremail">@
+                    <select name="useremailadd">
+                        <option value="0"> </option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.com">daum.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td>
+                        <select name="year">
+                        <option value="1988">1988</option>
+                        <option value="1993">1993</option>
+                    </select>
+                        <select name="month">
+                        <option value="">월</option>
+                        <option value="7월">7월</option>
+                    </select>
+                    -
+                    <select name="day">
+                        <option value="e">일</option>
+                        <option value="f">16일</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>휴대폰 번호</td>
+                <td>
+                    <select name="number">
+                        <option value="">선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                    </select> 
+                    - 
+                    <input type="text" name="중간번호" value="">-
+                    <input type="text" name="끝번호" value="">
+                    <button type="submit">인증번호 발송</button>
+                    <button type="submit">인증번호 재발송</button>
+                </td>
+            </tr>
+            <tr>
+                <td>인증번호 입력</td>
+                <td><input type="text" name="checknum">
+                <button type="submit">확인</button></td>
+            </tr>
+    </table>
+    </form>
+</body>
+</html>

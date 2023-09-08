@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:hover{
+            color: orange;
+            cursor: pointer;
+        }
+        /* li요소에 마우스를 올렸을때 li요소 안에 span이 나온다 */
+        li:hover span{
+            display: inline;
+        }
+        li span{
+            display: none;
+        }
+        .clearboth::after {
+        content: "";
+        display: block;
+        clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Green</h1>
+        <ul>
+            <li>menu1<span class="clearboth">스판</span></li>
+            <li>menu2<span class="clearboth">스판</span></li>
+            <li>menu3<span class="clearboth">스판</span></li>
+            <li>menu4<span class="clearboth">스판</span></li>
+        </ul>
+    </div>
+</body>
+</html>

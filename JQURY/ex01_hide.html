@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        div {
+            height: 200px;
+            background-color: tomato;
+        }
+
+    </style>
+    <script>
+    //문서가 다 로드되면 실행해라 ready 
+    //이벤트를 이용한 div 숨기고 나타내기
+    //hide()숨기기, show()나타내기, toggle()숨기기/나타내기 
+    //fadeIn() 서서히 나타내기, fadeOut() 서서히 사라지기, fadeToggle() 서서히 숨기기/나타내기 반복
+    //slideDowb() 나타나기
+    //slideUp() 위로 올라가며 사라지기
+   
+    //hide()숨기기 이벤트 
+    $(document).ready(function(){
+        $(".btn1").click(function(){
+            $("div").hide();
+        })
+    })
+    //show() 나타내기 이벤트
+    $(document).ready(function(){
+        $(".btn2").click(function(){
+            $("div").show();
+        })
+    })
+    $(document).ready(function(){
+        $(".btn3").click(function(){
+            $("div").toggle();
+        })
+    })
+    $(document).ready(function(){
+        $(".btn4").click(function(){
+            $("div").fadeOut("slow");
+        })
+    })
+    $(document).ready(function(){
+        $(".btn5").click(function(){
+            $("div").fadeIn("slow");
+        })
+    })
+    $(document).ready(function(){
+        $(".btn6").click(function(){
+            $("div").fadeToggle("slow");
+        })
+    })
+    $(document).ready(function(){
+        $(".btn7").click(function(){
+            $("div").slideUp("slow");
+        })
+    })
+    $(document).ready(function(){
+        $(".btn8").click(function(){
+            $("div").slideDown("slow");
+        })
+    })
+    $(document).ready(function(){
+        $(".btn9").click(function(){
+            $("div").slideToggle("slow");
+        })
+    })
+    </script>
+</head>
+<body>
+    <div>
+        박스입니다.
+    </div>
+    <button class="btn1">숨기기 button</button>  
+    <button class="btn2"> 나타내기 button</button>
+    <button class="btn3">숨기기/나타내기</button>
+    <button class="btn4">서서히 숨기기</button>
+    <button class="btn5">서서히나타내기</button>
+    <button class="btn6">서서히숨기기/나타내기</button>
+    <button class="btn7">서서히 숨기기</button>
+    <button class="btn8">서서히나타내기</button>
+    <button class="btn9">서서히숨기기/나타내기</button>
+</body>
+</html>

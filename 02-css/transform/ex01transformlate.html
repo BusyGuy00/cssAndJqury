@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            transform:  translate(0px 0px);
+            transition: 0.8s;
+            
+
+        }
+        div:hover {
+            transform: translateX(50px);
+        }
+         */
+         #parent{
+            width: 1000px;
+            height: 500px;
+            background-color:  tomato;
+            position: relative;
+         }
+
+         #children { background-color: aqua;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+         }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="children">
+
+        </div>
+    </div>
+</body>
+</html>

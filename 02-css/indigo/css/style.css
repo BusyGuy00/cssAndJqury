@@ -1,0 +1,147 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+img {vertical-align: middle;}
+a {text-decoration: none; color: inherit;}
+li{list-style: none;}
+address{font-style: none;}
+h1, h2, h3, h4, h5, h6 {font-weight: none;}
+body{
+    font-size: 14px;
+    font-family: "맑은고딕"sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+.clearboth::after {
+    content: "";
+    display: block;
+    clear:both
+}
+.inner_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 헤드 영역 */
+header {
+    margin: 20px;
+}
+header h1 {
+    float: left;
+}
+header ul {
+    float: right;
+}
+header li{
+    float: left;
+    padding: 10px 25px 0;
+}
+/* 메인 영역 */
+section > img {
+    width: 100%;
+}
+.tit {margin-top :100px;}
+.tit h2 {
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    font-size: 34px;
+    color: #3f51b5;
+}
+.tit p { 
+    float: left;
+    width: 60%;
+    text-align: left;
+    position: relative;
+    border-left: 3px solid #666; 
+    padding-left: 30px;
+}
+#We ul img {
+    height: 50px;
+}
+#We ul li{
+    float: left;
+    width:21.25%;
+    margin-top: 50px;
+    text-align: center;
+}
+#We ul li:not(:last-child){
+   padding-right: 5%;
+}
+
+#work ul { background-color: aquamarine;
+    float: left;
+}
+#work li {background-color: aquamarine;
+    float: left;
+    width: 25%;
+    position: relative;
+    
+}
+#work li div {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: -30%;
+    left: 10%;
+    transition: 1s;
+    
+}
+#work li div:hover div {
+    transform: translateY(400%);
+}
+
+#work .bluebg { 
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #3f51b5;
+    width: 100%;
+    height: 100%;
+    opacity : 0;
+    transition: 1s;
+}
+#work li:hover .bluebg {
+    opacity: 0.5;
+}
+#blog h2 { 
+    float: left;
+}
+#blog ul{
+    float: left;
+}
+#blog li:not(:last-child) {
+    margin-right:10%;
+}
+#blog li{ 
+    float: left;
+    width: 25%;
+}
+#blog ul img { 
+    width: 280px;
+    
+}
+#blog ul h3 { 
+    font-weight: normal; 
+    font-size: 13px;
+    width: 100%;
+}
+/* #contact h2{ 
+    float: left;   
+}
+#contact table {
+    float: right;} */
+   
+
+
+
+table td {width:100%;}
+table input { 
+    border:0 solid #fff;
+    border-bottom: 1px solid #666;
+    width: 50%;
+}
+table textarea {
+    border: 0 solid #fff;
+    border-bottom: 1px solid #666;
+}
+#textarea {width: 100%;}

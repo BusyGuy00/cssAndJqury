@@ -1,0 +1,260 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+img {vertical-align: middle; width: 100%;}
+a{ text-decoration: none; color: inherit;}
+li{list-style: none;}
+table{border-collapse: collapse;}
+address{font-style: none;}
+h1, h2, h3, h4, h5, h6 { font-weight: normal;}
+body{
+    font-size: 14px;
+    color: #222;
+    line-height: 1.6;
+}
+.clearboth::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.inner_container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 헤드 영역 */
+header{
+    padding: 20px;
+}
+header h1 {
+    float: left;
+    font-size: 34px;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    float: left;
+    padding: 20px;
+    font-size: 18px;
+}
+.mobille {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    right: 0;
+    top: 0;
+    padding-top: 30px;
+    display: none;
+   }
+   .mobille span {
+    display: block;
+    width: 60%;
+    height: 5px;
+    background-color: #3f51b5;
+    margin: 6px auto;
+   }
+/* 메인 영역 */
+main > section:not(:first-child){
+    padding: 60px 0;
+}
+.tit {
+    padding-bottom: 60px;
+}
+.tit h2 {
+    color: #3f51b5;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+#weare .tit h2 {
+    float: left;
+    width: 32%;
+    border-right: 8px solid #ddd;
+}
+#weare .tit p {
+    float: left;
+    width: 65%;
+    padding-left: 40px;
+}
+#weare li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 30px 50px;
+}
+#weare li img {
+    /* img에 width 100% 명령어가 위에 있기에 width에 auto를 줘야 한다 */
+    height: 100px;
+    width: auto;
+}
+#weare li h3 {
+    color: #3f51b5;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* 메인2 영역 */
+#work li {
+    float: left;
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+#work li .bluebg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opcity를 주면 글자도 같이 투명해 지기 떄문에 rgba로 써야한다. */
+    background-color: rgba(63, 81, 181, 0 );
+}
+#work li .bluebg div{
+ position: absolute;
+ left: 50px;
+ top: -200px;
+ color: #fff;
+ transition: 0.5s;
+}
+#work li:hover .bluebg {
+    background-color: rgba(63, 81, 181, 0.5 ) ;
+}
+#work li:hover .bluebg div {
+    top: 50px;
+}
+
+#blog .tit {
+    float: left;
+    width: 30%;
+}
+#blog ul {
+    float: left;
+    width: 70%;
+}
+#blog ul li {
+    float: left;
+    width: 32.3333%;
+}
+#blog ul li:not(:last-child){
+    margin-right: 1.5%;
+}
+
+#contact .tit {
+    float: left;
+    width: 30%;
+}
+#contact #message{
+    float: left;
+    width: 70%;
+}
+#contact #inputs {
+    float: left;
+    width:  50%;
+     /* height: 40px;  */
+    /* border: none;
+    border-bottom: 1px solid #ddd; */
+}
+#contact #textMassage{
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+#contact input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    line-height: 49px;
+}
+#contact textarea{
+    width: 100%;
+    border: none;
+    height: 150px;
+    /* height: 123px; */
+    border-bottom: 1px solid #ddd;
+}
+
+#contact #button {
+    text-align: right;
+    clear:left;
+}
+#contact #button input{
+    width: 200px;
+    background-color: #3f51b5;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+#pl {
+    padding-left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding:40px;
+}
+
+/* 반응형 css */
+@media screen and (max-width: 1024px) {
+    .tit {
+        text-align: center;
+    }
+    #weare .tit h2 {
+        
+        width: 100%;
+        border-right: none;
+        text-align: center;
+    }
+    #weare .tit p {
+
+        width: 100%;
+        padding-left: 40px;
+        text-align: center;
+    }
+    #weare li{
+        width: 50%;
+    }
+    #work li {
+        width: 50%;
+    }
+    #blog .tit {
+        width: 100%;
+    }
+    #blog ul {
+        width: 100%;
+    }
+    #contact .tit{
+        width: 100%;
+    }
+    #contact #message {
+        width: 100%;
+    }
+
+ 
+}
+   /* 768이하 일떄 */
+   @media screen and (max-width: 768px) {
+        nav { display: none;}
+        .mobille{
+            display: block;
+        }
+        #weare li {
+            width: 100%;
+        }
+        #work li {
+            width: 100%;
+        }
+        #contact input{
+            width: 100%;
+            padding: 20px;
+            
+        }
+        #contact textarea{
+            width: 100%;
+            padding:  20px;
+        }
+        #blog ul li {
+            width: 100%;
+           }
+           #blog ul li:not(:last-child){
+            margin-right: 0;
+           }
+        }

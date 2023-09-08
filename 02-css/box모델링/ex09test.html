@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .clearboth::after{
+        content: "";
+        display: block;
+        clear: both;}
+       body {
+        font-family: "맑은고딕",sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #2d2d2d
+    } 
+    li{list-style: none;}
+        #wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+        #header {
+            background-color: black;
+        }
+        #header ul li {
+            float: left;
+            padding-right: 50px;
+        }
+        h2{
+            display: inline-block;
+        }
+        div ul:nth-child(1){
+            float: left;
+           
+        }
+        
+        div ul:nth-child(3){
+            float: right
+        }
+        #header li i.material-icons {
+            font-size: 30px;
+            color: white;
+            padding-top: 5px;
+        }
+        #maintop {
+            width: 100%;
+        }
+        #mainbottom { background-color: aliceblue;
+        }
+       
+        
+        #mainbottom h3 {
+            display: inline-block;
+            
+            
+        }
+        #mainbottom > div ul li {
+            float: left;
+            padding: 0 30px;
+        }
+        #contents1 ul:nth-child(2) {
+            float: right;
+           
+        }
+        #contents1 {
+            border-bottom: 1px solid #ddd;
+            padding: 30px 0
+        }
+        h4{
+            padding: 30px 0;
+        }
+        dl{
+            display: inline-block;
+        }
+        #contents2 ul {margin-right: 30px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <ul>
+                <li> 
+                    <i class="material-icons">drag_handle</i>
+                 </li>
+                <li> 
+                    <i class="material-icons">search</i></i> 
+                </li>
+                <li> 
+                    <i class="material-icons">store</i>
+                </li>
+            </ul>
+            <h2>
+             <img src="./images/top_logo.gif" alt="top_logo">
+            </h2>
+            <ul>
+                <li><i class="material-icons">visibility</i></li>
+                <li><i class="material-icons">visibility_off</i></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="maintop" class="clearboth">
+              <img  src="./images/visual.gif" alt="visual.gif">  
+            </div>
+            <div id="mainbottom">
+                <div id="contents1">
+                <h3><img src="./images/so_title.gif" alt=""></h3>
+                    <ul>
+                        <li>Brand</li>
+                        <li>Product</li>
+                        <li>store</li>
+                        <li>customer center</li>
+                    </ul>
+                </div>
+                <div id="contents2">
+                <h4> NEW PRODUCT </h4>
+                <ul>
+                   <dl><img src="./images/product01.gif" alt="product01.gif">
+                    <dt>X2D2
+                        <dd>링클 포커스 세럼 <br> wrinlke focus serum</dd>
+                    </dt>
+                   </dl>
+                   <dl><img src="./images/product02.gif" alt="product02.gif">
+                    <dt>X2D2
+                        <dd>링클 포커스 세럼 <br> wrinlke focus serum</dd>
+                    </dt>
+                   </dl>
+                   <dl> <img src="./images/product03.gif" alt="product03.gif">
+                    <dt>X2D2
+                        <dd>링클 포커스 세럼 <br> wrinlke focus serum</dd>
+                    </dt>
+                   </dl> 
+                   <dl> <img src="./images/product04.gif" alt="product04.gif">
+                    <dt>X2D2
+                        <dd>링클 포커스 세럼 <br> wrinlke focus serum</dd>
+                    </dt>
+                   </dl>
+                </ul>
+            </div>
+            </div>
+            <div id="mainfotter"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

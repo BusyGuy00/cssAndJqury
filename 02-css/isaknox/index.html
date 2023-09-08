@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* 초기화 세팅 */
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        a{text-decoration: none; color: inherit;}
+        li{list-style: none;}
+        address{font-style: normal;}
+        h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+        img { vertical-align: top;}
+        body {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .blackbg {
+            background-color: #000;
+            color: #fff;
+        }
+        .innerCon {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #header ul:nth-child(1){
+            float: left;
+        }
+        #header {
+            /* 해더의 줄 간격은 이미지에 맞춰 조정 했다 */
+            text-align: center;
+            padding: 20px 0;
+            line-height: 33px;
+        }
+        #header h1 {
+            display: inline-block;
+        }
+        #header ul:nth-child(3){
+            float: right;
+        }
+        #header ul li {
+            float: left;
+            padding: 0 20px;
+        }
+      
+        #header *{
+            /* 세로 줄의 간격을 맞춰 준다 */
+            vertical-align: middle;
+        }
+        .clearboth::after {
+            /* float을 쓰는 경우엔 무조건 만들어 둔다 (바로 위 부모 요소에 입력) */
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #visual img {
+            width: 100%;
+        }
+        /* id 지정 해서 하는 편이 편하다 */
+        #product div:nth-child(1) {
+            border-bottom: 3px double #ddd;
+            padding: 26px 0;
+        }
+        #product div:nth-child(1) h2 {
+            float: left;
+        }
+        #product div:nth-child(1) ul {
+            float: right;
+        }
+        #product div:nth-child(1) ul li {
+            float: left;
+            padding: 0 20px;
+            /* 이미지와 줄이 안맞는 경우 이미지의 높이를 입력해 주면 된다. */
+            line-height: 45px;
+        }
+        #newProduct {
+            padding-bottom: 40px;
+        }
+        #newProduct h3 {
+            text-align: center;
+            padding: 20px 0;
+        }
+        #newProduct li{
+            float: left;
+            width: 25%;
+            padding: 20px ;
+            text-align: center;
+        }
+        #banner div{
+           float: left;
+           /* 부모 요소의 하위 요소의 영역이 더 큰 경우 부모 요소의 영역 외의 부분은 숨긴다 */
+           overflow: hidden;
+        }
+        #banner div:hover img {
+            transform: scale(1.1);
+        }
+        #banner div:nth-child(1){
+            width: 50%;
+            height: 600px;
+        }
+        #banner div:nth-child(2){
+            width: 50%;
+            height:300px
+        }
+        #banner div:nth-child(3){
+            width: 25%;
+            height:300px
+        }
+        #banner div:nth-child(4){
+            width: 25%;
+            height:300px
+        }
+        /* #banner div:hover img를 이용해 화면을 커지는 이팩트를 주고 transition을 통해 부드럽게 만들 수 있다 */
+        #banner div img {
+            width: 100%;
+            transition: 0.5s;
+        }
+        #footermenu {
+            background-color: #f1eff0;
+            margin-top: 30px;
+            text-align: center;
+            padding: 26px;
+            line-height: 31px;
+        }
+        #footermenu > a {
+            float: left;
+        }
+        #footermenu ul{
+            display: inline-block;
+        }
+        #footermenu ul li {
+            float: left;
+            padding: 0 10px;
+            border-right: 1px #333 solid;
+            line-height: 20px;
+        }
+        #footermenu > select {
+            float: right;
+            height: 31px;
+            width: 120px;
+        }
+        #footercopy {
+            padding: 20px 0;
+        }
+        #footercopy address { 
+            float: left;
+        }
+        #footercopy h1{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header" class="blackbg">
+            <div class="innerCon clearboth">
+                <ul>
+                    <li><i class="material-icons">store_mall_directory</i></li>
+                    <li><i class="material-icons">message</i></li>
+                    <li><i class="material-icons">font_download</i></li>
+                </ul>
+                <h1>
+                    <img src="./images/top_logo.gif" alt="isaknox"/>
+                </h1>
+                <ul>
+                    <li><i class="material-icons">chevron_right</i>Login</li>
+                    <li><i class="material-icons">chevron_right</i>Join</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="visual" class="blackbg">
+                <div class="innerCon">
+                    <img src="./images/visual.gif" alt="">
+                </div>
+            </div>
+            <div id="product" class="innerCon">
+                <div class="clearboth">
+                    <h2>
+                        <img src="./images/so_title.gif" alt="">
+                    </h2>
+                    <ul>
+                        <li>Brand </li>
+                        <li>Product</li>
+                        <li>Store</li>
+                        <li>CustomerCenter</li>
+                    </ul>
+                </div>
+                <div id="newProduct">
+                    <h3>New Product</h3>
+                    <ul class="clearboth">
+                        <li>
+                            <img src="./images/product01.gif" alt="">
+                            <h4>X2D2</h4>
+                            <p>링클 포커스 세럼<br/>wrinkle focus serum</p>
+                        </li>
+                        <li>
+                            <img src="./images/product02.gif" alt="">
+                            <h4>X2D2</h4>
+                            <p>링클 포커스 세럼<br/>wrinkle focus serum</p>
+                        </li>
+                        <li>
+                            <img src="./images/product03.gif" alt="">
+                            <h4>X2D2</h4>
+                            <p>링클 포커스 세럼<br/>wrinkle focus serum</p>
+                        </li>
+                        <li>
+                            <img src="./images/product04.gif" alt="">
+                            <h4>X2D2</h4>
+                            <p>링클 포커스 세럼<br/>wrinkle focus serum</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="banner" class="innerCon clearboth">
+                <div><img src="./images/main_banner01.gif" alt=""></div>
+                <div><img src="./images/main_banner02.gif" alt=""></div>
+                <div><img src="./images/main_banner03.gif" alt=""></div>
+                <div><img src="./images/main_banner04.gif" alt=""></div>
+            </div>
+        </div>
+        <div id="footer" class="innerCon">
+            <div id="footermenu" class="clearboth">
+                <a href="#"><img src="./images/f_icon.gif" alt="페이스북바로가기"></a>
+                <ul class="clearboth">
+                    <li>Contact us </li>
+                    <li>이용약관</li>
+                    <li>개인정보취급방침</li>
+                </ul>
+                <select name="" id="">
+                    <option value="">Family Site</option>
+                    <option value="">한국화장품</option>
+                </select>
+            </div>
+            <div id="footercopy" class="clearboth">
+                <address>
+                    (주)LG생활건강 / 서울틀별시 종로구 세문안로 58 LG광화문빌딩 110-783 대표이사 차석용 / 고객상담실 080-023-7007 / 사업자등록번호 107-81-98143 <br/>
+                    COPYRIGHT & LG HOUSEHOLD HEALTH CARE LTD. 2015 ALL RIGHT RESERVED.</address>
+                <h1>
+                    <img src="./images/bottom_logo.gif" alt="">
+                </h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

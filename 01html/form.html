@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--action 으로 전송 한다  -->
+<body>
+    <h2>사용자입력 form태그</h2>
+    <form action="" method="get">
+        <p>아 이 디 :  <input type="text" name="userid" placeholder="아이디 입력"></p>
+        <p>패스워드: <input type="password" name="userpass" placeholder="비밀번호 입력"></p>
+        <p> 남 <input type="radio" name="gneder" value="남성" checked>
+            여  <input type="radio" name="gender" value="여성"></p>
+        <p>
+            <select name="job">
+                <option value="a">강사</option>
+                <option value="b">학생</option>
+                <option value="c">회사원</option>
+            </select>
+        </p>
+        <p>
+            취미
+            책 읽기 <input type="checkbox" name="hobby" value="책 읽기">
+            영화 <input type="checkbox" name="hobby" value="영화">
+            자격증 취득 <input type="checkbox" name="hobby" value="자격증 취득">
+        </p>
+        <p>
+            <textarea name="contents" id="contents" 
+            cols="35" rows="10">
+            </textarea>
+        </p>
+            <input type="file" name="photo">
+        <p>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </p>
+    </form>
+            기타<input type="text" name="userpass">
+</body>
+</html>

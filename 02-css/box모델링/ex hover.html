@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0 auto; padding: 0;}
+    body{background-color: #555; }
+    li {list-style: none; }
+    #wrap {
+        color: #fff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+       
+    }
+    div ul {float: left;}
+
+    .img { width: 100%; opacity:0.3}
+
+    #hover1 { 
+        width: 400px;
+        height: 300px; 
+        position: relative;
+        display: inline-block;
+        margin-right: 50px ;
+        margin-left:  100px;
+        transition: 0.5s;
+        }
+    #hover1::after{ 
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        bottom: 50px;
+        left: 50px;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        transform: scale(0,1);
+        transition: 0.5s;
+    }
+    #hover1:hover::after{
+        transform: scale(1,1);
+    }
+    #hover1:hover::before{
+        transform: scale(1,1);
+    }
+    #hover1::before{ 
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        bottom: 50px;
+        left: 50px;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+        transform: scale(1,0);
+        transition: 0.5s; 
+    }
+    #hover1 h2 { transition: 0.5s; 
+    
+      
+     }
+     #hover1:hover h2 {
+        transform: translateY(50px);
+     }
+     
+    .text{
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        text-align: center;
+        transform: translateX(-50%); 
+    }
+    #hoverimg2 {
+        position: absolute;
+    }
+    #hover2 { 
+        width: 400px;
+        height: 300px; 
+        position: relative;
+        display: inline-block;
+        }
+    #hover2::after{ 
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        bottom: 50px;
+        left: 50px;
+        border: 1px solid #fff;}
+
+</style>
+<body>
+    <div id="wrap">
+        <h1>hover01</h1>
+         <div id="hover1">
+            <ul>
+                <li><img id="hoverimg1" class="img" src="./images/1.jpg"> 
+                <div id="text1" class="text">
+                    <h2>hover effect</h2>
+                    <p>green web</p>
+                </div>
+                </li>
+            </div>
+            </ul>
+            <div id="hover2">
+            <ul>
+                <li><img id="hoverimg2" class="img" src="./images/2.jpg" alt="">
+                <div id="text2" class="text">
+                    <h2>hover effect</h2>
+                    <p>green web</p>
+                </div>
+                </li>
+            </ul>
+            </div>
+            <div id="hover2">
+                <ul>
+                    <li><img id="hoverimg1" class="img" src="./images/1.jpg"> 
+                    <div id="text1" class="text">
+                        <h2>hover effect</h2>
+                        <p>green web</p>
+                    </div>
+                    </li>
+                </div>
+                </ul>
+                <div id="hover2">
+                <ul>
+                    <li><img id="hoverimg2" class="img" src="./images/2.jpg" alt="">
+                    <div id="text2" class="text">
+                        <h2>hover effect</h2>
+                        <p>green web</p>
+                    </div>
+                    </li>
+                   
+                </ul>
+                </div>
+    </div>
+</body>
+</html>

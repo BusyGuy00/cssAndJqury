@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- /* 우로가기 맡울호가기 가로커지기 세로커지기 기울이기 회전 스케일 */ -->
+    <style>
+        .clearboth::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    #wrap{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #div1 {
+        width: 200px;
+        height: 200px;
+        background-color: beige;
+        border: 1px solid #333;
+        margin: 30px ;
+        float: left;
+        position: relative;
+    }
+    .div2{
+        width: 100px;
+        height: 100px;
+        background-color: mediumslateblue;
+        position:absolute;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+
+        transition: 1s;
+    }
+    
+    #trans1:hover{
+        transform: translate(50px);
+    }
+    #trans2:hover{
+        transform: translateY(50px)
+    }
+    #trans3:hover{
+        transform: scaleX(1.5);
+    }
+    #trans4:hover{
+        transform: scaleY(1.5);
+    }
+    #trans5:hover{
+        transform: skewX(45deg);
+    }
+    #trans6:hover{
+        transform: skewY(45deg);
+    }
+    #trans7:hover{ 
+        transform: rotate(90deg);
+    }
+    #trans8:hover{
+        transform: scale(1.5);
+    }
+      
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="top" class="clearboth">
+        <div id="div1">
+            <div id="trans1" class="div2"></div>
+        </div>
+        <div id="div1">
+            <div id="trans2" class="div2"></div>
+        </div>
+        <div id="div1">
+            <div id="trans3" class="div2"></div>
+        </div>
+        <div id="div1">
+            <div id="trans4" class="div2"></div>
+        </div>
+    </div>
+    <div>
+        <div id="div1">
+            <div id="trans5" class="div2"></div>
+        </div>
+        <div id="div1">
+            <div id="trans6" class="div2"></div>
+        </div>
+        <div id="div1">
+            <div id="trans7" class="div2"></div>
+        </div>
+        <div id="div1">
+            <div id="trans8" class="div2"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

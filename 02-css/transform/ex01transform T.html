@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+            position: relative;
+            float: left;
+            margin: 50px;
+        }
+        .parent div {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            transition: 0.5s;
+        }
+        .parent:nth-child(1):hover div{
+            transform: translate(0,180px);
+        }
+        .parent:nth-child(2):hover div{
+            transform: ;
+        }
+        .parent:nth-child(3):hover div{
+            transform: scale(2,1);
+        }
+        .parent:nth-child(4):hover div{
+             transform: scale(1,2);
+        }
+
+        .parent:nth-child(5):hover div{
+            transform: skewX(45deg);
+        }
+        .parent:nth-child(6):hover div{
+            transform: skewY{45deg};
+        }
+        .parent:nth-child(7):hover div{
+            transform: rotate(45deg);
+        }
+         .parent:nth-child(8):hover div{}
+
+    </style>
+  
+</head>
+<body>
+    <div class="parent">
+         <div></div>
+        </div>
+    <div class="parent"> <div></div></div>
+    <div class="parent"> <div></div></div>
+    <div class="parent"> <div></div></div>
+    <div class="parent"> <div></div></div>
+    <div class="parent"> <div></div></div>
+    <div class="parent"> <div></div></div>
+    <div class="parent"> <div></div></div>
+
+   
+
+   
+</body>
+</html>

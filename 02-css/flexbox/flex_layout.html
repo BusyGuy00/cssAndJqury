@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin:0; padding:0; box-sizing: border-box; }
+        a { text-decoration: none; color: inherit;}
+        li { list-style: none; }
+        body {
+            color: #333;
+            line-height: 1.6;
+            font-size: 14px;
+            background-color: #f1f1f1;
+            padding: 16px;
+        }
+        /* 주축(Y=column)의 아래쪽에 붙는데 */
+        #header {
+            padding-top: 30px; 
+            text-align: center; 
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        #header h1 { 
+            font-size: 38px;
+            
+        }
+        #header div {
+            margin-top: 30px;
+            line-height: 40px;
+            background-color: #333;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: space-between;
+        }
+        /* 디폴트가 row로 설정 되기에 flex만 해도 따로 지정을 안해도 가로 배치가 된다. */
+        #header div ul {
+            display: flex;
+        }
+        #header div a { 
+            padding: 0 20px;
+        }
+        #left{
+            width: 75%;
+        }
+        #right{
+            width:  25%;
+            padding-left: 16px;
+        }
+        #main{
+            display: flex;
+            padding-top: 16px;
+
+        }
+        .whitebox {
+            background-color: #fff;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+       .imagebox{
+            background-color: #555;
+            color: #fff;
+            padding: 16px;
+       }
+       div.imagebox {
+        margin: 16px, 0;
+        height: 130px;
+       }
+       #footer {
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>My Website</h1>
+            <p>p테그입니다.</p>
+            <div>
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+                <a href="#">link</a>
+            </div>
+        </div>
+        <div id="main" class="clearboth">
+            <div id="left">
+                <div class="whitebox">
+                    <h2>TITLE HEADING</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="imagebox">image</div>
+                    <h3>Title text</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="whitebox">
+                    <h2>TITLE HEADING</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="imagebox">image</div>
+                    <h3>Title text</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div id="right">
+                <div class="whitebox">
+                    <h2>About Me</h2>
+                    <div class="imagebox">image</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="whitebox">
+                    <h2>Popular Post</h2>
+                    <ul>
+                        <li class="imagebox">image</li>
+                        <li class="imagebox">image</li>
+                        <li class="imagebox">image</li>
+                    </ul>
+                </div>
+                <div class="whitebox">
+                    <h2>Follow Me</h2>
+                    <p>some text...</p>
+                </div>
+            </div>
+            <!-- after자리 -->
+        </div>
+        <div id="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>
